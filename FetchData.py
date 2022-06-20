@@ -39,10 +39,10 @@ def FetchData(run_id):
         Datasets.append(FetchTable((Queryset("fatalities002_greatest_hits", "country_month")),'gh'))
         Datasets.append(FetchTable((Queryset("hh_20_features", "country_month")),'hh20'))
         Datasets.append(FetchTable((Queryset("hh_all_features", "country_month")),'all_features'))
-        Datasets.append(FetchTable((Queryset("Fatalities002_aquastat", "country_month")),'Fatalities002_aquastat'))
-        Datasets.append(FetchTable((Queryset("Fatalities002_faostat", "country_month")),'Fatalities002_faostat'))
-        Datasets.append(FetchTable((Queryset("Fatalities002_faoprices", "country_month")),'Fatalities002_faoprices'))
-        Datasets.append(FetchTable((Queryset("Fatalities001_imfweo", "country_month")),'Fatalities001_imfweo'))
+        Datasets.append(FetchTable((Queryset("Fatalities002_aquastat", "country_month")),'aquastat'))
+        Datasets.append(FetchTable((Queryset("Fatalities002_faostat", "country_month")),'faostat'))
+        Datasets.append(FetchTable((Queryset("Fatalities002_faoprices", "country_month")),'faoprices'))
+        Datasets.append(FetchTable((Queryset("Fatalities001_imfweo", "country_month")),'imfweo'))
 
         # PCA
         Standard_features = ['ln_ged_sb_dep','ln_ged_sb', 'decay_ged_sb_5', 'decay_ged_os_5', 'splag_1_decay_ged_sb_5', 'wdi_sp_pop_totl']
