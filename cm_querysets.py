@@ -31,7 +31,6 @@ import views_dataviz
 
 qs = (Queryset("hh_fat_cm_ged_ln_ultrashort", "country_month")
 
-
     # target variable
     .with_column(Column("ln_ged_sb_dep", from_table = "ged2_cm", from_column = "ged_sb_best_sum_nokgi")
                  .transform.ops.ln()
@@ -1309,14 +1308,14 @@ qs = (Queryset("hh_fatalities_vdem", "country_month")
 
     """)
 )
-data = qs.publish().fetch()
+#data = qs.publish().fetch()
 
-print(f"hh_fatalities_vdem; "
-      f"A dataset with {len(data.columns)} columns, with "
-      f"data between t {min(data.index.get_level_values(0))} "
-      f"and {max(data.index.get_level_values(0))}. "
-      f"({len(np.unique(data.index.get_level_values(1)))} units)"
-     )
+#print(f"hh_fatalities_vdem; "
+#      f"A dataset with {len(data.columns)} columns, with "
+#      f"data between t {min(data.index.get_level_values(0))} "
+#      f"and {max(data.index.get_level_values(0))}. "
+#      f"({len(np.unique(data.index.get_level_values(1)))} units)"
+#     )
 
 
 # ## vdem_short
@@ -2002,14 +2001,14 @@ qs = (Queryset("hh_fatalities_wdi", "country_month")
 
             """)
         )
-data = qs.publish().fetch()
+#data = qs.publish().fetch()
 
-print(f"hh_fatalities_wdi;"
-      f"A dataset with {len(data.columns)} columns, with "
-      f"data between t {min(data.index.get_level_values(0))} "
-      f"and {max(data.index.get_level_values(0))}. "
-      f"({len(np.unique(data.index.get_level_values(1)))} units)"
-     )
+#print(f"hh_fatalities_wdi;"
+#      f"A dataset with {len(data.columns)} columns, with "
+#      f"data between t {min(data.index.get_level_values(0))} "
+#      f"and {max(data.index.get_level_values(0))}. "
+#      f"({len(np.unique(data.index.get_level_values(1)))} units)"
+#     )
 
 
 
