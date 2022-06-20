@@ -1,2 +1,2 @@
-# ViEWS forecasts
-Jupyter notebooks and python scripts for performing ViEWS annual and monthly forecasts
+# ViEWS monthly forecasts
+Jupyter notebooks and python scripts for performing ViEWS monthly forecasts
